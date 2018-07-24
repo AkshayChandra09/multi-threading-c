@@ -1,0 +1,41 @@
+********************* READ ME ***************************
+Student Name: Akshay Chandrachood
+
+Net id: ****
+Student id: ******
+*********************************************************
+
+1. To login on university server use:
+
+   ssh zeus.cs.txstate.edu
+
+It will ask you net id and password.
+
+2.Download the zip folder from tracs. Extract the files into your local drive.
+
+3. Use following command to copy files from local directory to university server.
+
+   sftp netId@zeus.cs.txstate.edu:/home/Students/netId/public_html
+
+Then it will ask for password(for university login)
+
+4. sftp> put fileName.C
+   sftp> bye	
+	
+5. Use following command to copy files from server directory to leap.
+
+   sftp netId@leap.txstate.edu
+
+6. sftp> put fileName.C
+   sftp> bye
+
+7. Compile the code using following command
+   
+  $mpicc -o mm multiply.c -std=c99
+
+8. Run the code using following command
+ 
+    $mpirun -n 4 ./mm
+
+_____________________________________________________________________________
+
